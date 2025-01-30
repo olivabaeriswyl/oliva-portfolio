@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <body>
+    <include src="includes/include-header.html"></include>
+
     <main>
       <div class="container">
         <div class="row">
@@ -15,6 +17,7 @@
               <strong
                 >Hello, I’m Oliva, a swiss interactive media designer.
               </strong>
+              <br />
               This multidisciplinary field encompasses a whole range of creative
               branches but I want to improve my skills in two areas that
               particularly interest me: frontend development and graphic design.
@@ -23,20 +26,26 @@
         </div>
       </div>
 
-      <div class="ornement"><p>BAERISWYL</p></div>
+      <div class="ornement"><img src="img/logo-baeriswyl.png" alt="" /></div>
 
       <div class="container">
-        <div class="row">
-          <div class="col-12"><h2>Selected works</h2></div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-md-6"><img src="#" alt="" /></div>
-          <div class="col-12 col-md-6"><img src="#" alt="" /></div>
+        <div class="works-selected">
+          <div class="row">
+            <div class="col-12"><h2>Selected works</h2></div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <img src="img/selected-baer.jpg" alt="Baer" />
+            </div>
+            <div class="col-12 col-md-6">
+              <img src="img/selected-ecran-argent.jpg" alt="L'écran d'argent" />
+            </div>
+          </div>
         </div>
       </div>
     </main>
 
-    <include src="includes/include-footer.html" />
+    <include src="includes/include-footer.html"></include>
 
     <script src="js/main.js" type="module"></script>
   </body>

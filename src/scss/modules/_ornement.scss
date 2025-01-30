@@ -1,5 +1,12 @@
+.ornement img {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  pointer-events: none;
+}
+
 .ornement {
-  font-family: Traditional;
-  font-size: 11vw;
-  text-align: center;
+  margin: 150px 0 120px;
+  padding: 0 12px;
 }
