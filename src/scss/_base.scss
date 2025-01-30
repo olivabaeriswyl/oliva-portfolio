@@ -26,12 +26,18 @@ body {
   background: black;
   font-family: CabinetGrotesk, sans-serif;
   font-size: 1.5rem;
+  position: relative;
+}
+
+header {
+  padding: 50px 0 120px;
 }
 
 header a {
   font-size: 1.5rem;
   font-weight: 800;
   text-decoration: none;
+  z-index: 2;
 }
 
 nav {
@@ -41,8 +47,13 @@ nav {
   gap: 40px;
 }
 
-header {
-  padding: 50px 0 120px;
+nav a {
+  border-bottom: 1px black solid;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  border-bottom: 1px white solid;
 }
 
 h2 {

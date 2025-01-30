@@ -1,0 +1,25 @@
+#about-me-button-resume {
+  background-color: white;
+  border: 1px black solid;
+  color: black;
+  padding: 10px 25px;
+  border-radius: 60px;
+  text-decoration: none;
+  font-weight: 800;
+  margin-bottom: 200px;
+  transition-duration: 0.2s;
+}
+
+#about-me-button-resume:hover {
+  background-color: black;
+  border: 1px white solid;
+  color: white;
+}
+
+.about-me-paragraph {
+  margin-bottom: 30px;
+}
+
+.about-me-paragraph-margin {
+  margin-top: 120px;
+}

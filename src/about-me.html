@@ -5,24 +5,31 @@
     <title>About Me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
+    <link rel="icon" type="image/x-icon" href="img/logo-b.png" />
   </head>
   <body>
+    <include src="includes/include-header.html"></include>
+
+    <div class="ornement ornement-back">
+      <img src="img/logo-baeriswyl.png" alt="" />
+    </div>
+
     <div class="container">
       <div class="row">
         <div class="col"><h2>About Me</h2></div>
       </div>
       <div class="row">
         <div class="col-10 col-md-4">
-          <img src="#" alt="Photo de moi" />
+          <img src="img/portrait-oliva.png" alt="Photo de moi" />
         </div>
         <div class="col-12 col-md-8">
           <div class="row">
             <div class="col-md-9">
-              <p>
+              <p class="about-me-paragraph">
                 To start the day, I always drink a sugar-free tea, with a bag
                 brewed to the extreme, and sometimes it's even black tea. :)
               </p>
-              <p>
+              <p class="about-me-paragraph">
                 I'm a curious person, I'm interested in a lot of things and I
                 like to learn in the fields I'm passionate about. I'm also a
                 perfectionist, so I put a lot of effort into my projects and try
@@ -30,25 +37,34 @@
               </p>
             </div>
             <div class="col-md-9 offset-md-3">
-              <p>
+              <p class="about-me-paragraph">
                 Writing is one of my favorite escapes. Writing stories allows me
                 to create and give free rein to my imagination. I also read,
                 play sport and I like fashion. I love finding new clothing and
                 decorating finds.
               </p>
-              <p>
+              <p class="about-me-paragraph">
                 Music is an essential part of my life. I listen to a lot of
                 different genres depending on my mood: film and TV soundtracks,
                 alternative rock and, above all, techno, which has an important
                 place in my playlist!
               </p>
-              <p>Feel free to contact me for further information.</p>
-              <button>Check my resume</button>
+              <p class="about-me-paragraph about-me-paragraph-margin">
+                Feel free to contact me for further information.
+              </p>
+              <a
+                href="https://drive.google.com/file/d/1FObsVVLmVr5IDomyQ8QXXgG61BxNnciA/view?usp=drive_link"
+                target="_blank"
+                id="about-me-button-resume"
+                >Check my resume
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <include src="includes/include-footer.html"></include>
 
     <script src="js/main.js" type="module"></script>
   </body>
