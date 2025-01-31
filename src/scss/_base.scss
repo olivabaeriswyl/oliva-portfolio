@@ -71,6 +71,12 @@ img {
   max-width: 100%;
 }
 
+a,
+a * {
+  text-decoration: none !important;
+}
+
+//boutons des filtres
 button {
   background-color: white;
   border: 1px black solid;
