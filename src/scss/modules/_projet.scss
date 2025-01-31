@@ -4,6 +4,59 @@
   gap: 30px;
 }
 
-.kaka {
-  background-color: gray;
+.projet img {
+  margin-bottom: 60px;
+}
+
+.projet-space {
+  height: 600px;
+  display: flex;
+  align-items: end;
+}
+
+.projet-text-space {
+  margin-bottom: 300px;
+}
+
+.projet a {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: none;
+  border-bottom: 1px black solid;
+  transition: 0.2s;
+}
+
+.projet a:hover {
+  border-bottom: 1px white solid;
+}
+
+.projet-link {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 992px) {
+  .projet-img-size {
+    max-width: 300px;
+  }
+
+  .projet-img-size-place {
+    display: flex;
+    justify-content: end;
+  }
+
+  .projet-img-margin {
+    margin-top: 60px;
+  }
+
+  .projet-space {
+    height: 400px;
+  }
+
+  .projet-space img {
+    max-width: 300px;
+  }
+
+  .projet-text-space {
+    margin-bottom: 100px;
+  }
 }
