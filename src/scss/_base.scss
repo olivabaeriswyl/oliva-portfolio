@@ -65,8 +65,27 @@ h2 {
 h3 {
   font-size: 6.25rem;
   font-weight: 800;
+  line-height: 100%;
 }
 
 img {
   max-width: 100%;
+}
+
+button {
+  background-color: white;
+  border: 1px black solid;
+  color: black;
+  padding: 10px 25px;
+  border-radius: 60px;
+  font-size: 24px;
+  font-weight: 800;
+  transition-duration: 0.2s;
+  margin-bottom: 100px;
+}
+
+button:hover {
+  background-color: black;
+  border: 1px white solid;
+  color: white;
 }

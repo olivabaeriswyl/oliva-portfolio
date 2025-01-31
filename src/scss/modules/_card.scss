@@ -1,0 +1,39 @@
+.card-img {
+  max-width: 50%;
+  display: flex;
+}
+
+.card-filter {
+  display: flex;
+  gap: 30px;
+}
+
+.card-title {
+  margin-top: -12px;
+}
+
+.item {
+  margin-bottom: 120px;
+}
+
+//Test filtres
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item {
+  transition: all 0.5s ease;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
