@@ -67,6 +67,12 @@ h3 {
   line-height: 100%;
 }
 
+@media (max-width: 768px) {
+  h3 {
+    padding-top: 30px;
+  }
+}
+
 img {
   max-width: 100%;
 }
