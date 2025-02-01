@@ -46,15 +46,6 @@ nav {
   gap: 40px;
 }
 
-nav a {
-  border-bottom: 1px black solid;
-  transition: 0.2s;
-}
-
-nav a:hover {
-  border-bottom: 1px white solid;
-}
-
 h2 {
   font-size: 2rem;
   font-weight: 800;
@@ -118,4 +109,51 @@ button {
   mix-blend-mode: difference;
   transform: translate(-50%, -50%);
   transition: transform 0.2s ease-out;
+}
+
+// Liens animation
+nav a {
+  color: #fff;
+  line-height: 2;
+  position: relative;
+}
+
+nav a::before {
+  content: "";
+  width: 0;
+  height: 1.5px;
+  border-radius: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -0.25rem;
+  right: 0;
+  transition: right 0.4s, width 0.4s, left 0.4s;
+}
+
+nav a:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+#footer-mail {
+  color: black;
+  line-height: 2;
+  position: relative;
+}
+
+#footer-mail::before {
+  content: "";
+  width: 0;
+  height: 1.5px;
+  border-radius: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: -0.25rem;
+  right: 0;
+  transition: right 0.4s, width 0.4s, left 0.4s;
+}
+
+#footer-mail:hover::before {
+  width: 100%;
+  left: 0;
 }
