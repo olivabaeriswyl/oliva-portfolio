@@ -12,9 +12,20 @@ function filterItems(category) {
   });
 }
 
+var buttonFilters = document.querySelectorAll(".button-filter");
+
+buttonFilters.forEach((button) => {
+  button.addEventListener("click", function () {
+    console.log(button);
+    var category = button.getAttribute("data-value");
+    filterItems(category);
+  });
+});
+
 // Curseur personnalisé
 var cursor = document.querySelector(".cursor");
 var links = document.querySelectorAll("a");
+var buttons = document.querySelectorAll("button");
 
 var onMouseMove = function (event) {
   cursor.style.top = event.y + "px";
@@ -34,4 +45,9 @@ document.addEventListener("mousemove", onMouseMove);
 links.forEach((link) => {
   link.addEventListener("mouseenter", onMouseEnter);
   link.addEventListener("mouseleave", onMouseLeave);
+});
+
+buttons.forEach((button) => {
+  button.addEventListener("mouseenter", onMouseEnter);
+  button.addEventListener("mouseleave", onMouseLeave);
 });
