@@ -25,3 +25,45 @@ footer a {
   gap: 60px;
   align-items: center;
 }
+
+// Couleur au hover
+.footer-icon {
+  color: black;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-icon:hover {
+  color: var(--couleur);
+}
+
+// Animation survol mail
+#footer-mail {
+  line-height: 2;
+  position: relative;
+  transition: color 0.2s;
+}
+
+#footer-mail:hover {
+  color: #60d400;
+}
+
+#footer-mail::before {
+  content: "";
+  width: 0;
+  height: 1.5px;
+  border-radius: 2px;
+  background-color: #60d400;
+  position: absolute;
+  bottom: -0.25rem;
+  right: 0;
+  transition: right 0.4s, width 0.4s, left 0.4s;
+}
+
+#footer-mail:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+#footer-mail:hover {
+  mix-blend-mode: difference;
+}

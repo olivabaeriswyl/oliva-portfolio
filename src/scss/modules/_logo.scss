@@ -1,5 +1,5 @@
 .logo-b {
-  height: 60px;
+  height: 70px;
   width: auto;
   margin-right: 10px;
 }
@@ -11,4 +11,9 @@
 .logo-all {
   display: flex;
   align-items: center;
+  transition: color 0.2s;
+}
+
+.logo-all:hover {
+  color: var(--couleur);
 }
