@@ -6,7 +6,6 @@ footer {
 }
 
 footer a {
-  font-weight: 800;
   text-decoration: none;
 }
 
@@ -38,12 +37,14 @@ footer a {
 
 // Animation survol mail
 #footer-mail {
+  font-weight: 800;
   line-height: 2;
   position: relative;
   transition: color 0.2s;
 }
 
 #footer-mail:hover {
+  mix-blend-mode: difference;
   color: #60d400;
 }
 
@@ -52,6 +53,7 @@ footer a {
   width: 0;
   height: 1.5px;
   border-radius: 2px;
+  mix-blend-mode: difference;
   background-color: #60d400;
   position: absolute;
   bottom: -0.25rem;
@@ -62,8 +64,4 @@ footer a {
 #footer-mail:hover::before {
   width: 100%;
   left: 0;
-}
-
-#footer-mail:hover {
-  mix-blend-mode: difference;
 }

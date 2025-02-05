@@ -1,24 +1,43 @@
-// Filtres
+// Filtres informatifs
 .projet-filter {
   display: flex;
   justify-content: end;
   gap: 30px;
 }
 
-// Lien pour projets web
+// Animation survol projets web
 .projet a {
-  font-size: 1.5rem;
+  color: #fff;
   font-weight: 800;
-  text-decoration: none;
-  border-bottom: 1px black solid;
-  transition: 0.2s;
+  line-height: 2;
+  position: relative;
+  transition: color 0.2s;
 }
 
 .projet a:hover {
-  border-bottom: 1px white solid;
+  mix-blend-mode: difference;
+  color: var(--couleur);
 }
 
-// Grand espace images
+.projet a::before {
+  content: "";
+  width: 0;
+  height: 1.5px;
+  border-radius: 2px;
+  mix-blend-mode: difference;
+  background-color: var(--couleur);
+  position: absolute;
+  bottom: -0.25rem;
+  right: 0;
+  transition: right 0.4s, width 0.4s, left 0.4s;
+}
+
+.projet a:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+// Espaces images
 .projet-space {
   height: 600px;
   display: flex;
