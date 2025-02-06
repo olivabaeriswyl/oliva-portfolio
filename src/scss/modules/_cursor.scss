@@ -1,0 +1,19 @@
+// Curseur personnalisé
+html,
+a,
+button {
+  cursor: none;
+}
+
+.cursor {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background: white;
+  position: fixed;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease-out;
+  z-index: 1100;
+}
