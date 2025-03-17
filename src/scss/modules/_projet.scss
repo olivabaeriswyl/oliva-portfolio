@@ -7,7 +7,7 @@
 
 // Animation survol projets web
 .projet a {
-  color: #fff;
+  color: #000000;
   font-weight: 800;
   line-height: 2;
   position: relative;
@@ -76,4 +76,11 @@
   .projet-selected img {
     margin-bottom: 30px;
   }
+}
+
+//Lien sites
+.projet-evidence {
+  background: #fff;
+  border-radius: 60px;
+  padding: 0 10px;
 }
